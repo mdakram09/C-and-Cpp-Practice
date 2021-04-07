@@ -15,6 +15,7 @@ int main()
 	if(num==0 || num==1)
 	{
 		cout<<"Enter number other than 0 and 1";
+		exit(0);
 	}
 
 	while(num>1)
@@ -22,11 +23,13 @@ int main()
 		if(num%power==0)
 		{
 			cout<<"The number "<<temp<<" is a power of "<<power<<endl;
+			exit(0);
 
 		}
 		else
 		{
 			cout<<"The number "<<temp<<" is not a power of "<<power<<endl;
+			exit(0);
 		}
 		num=num/10;
 	}
