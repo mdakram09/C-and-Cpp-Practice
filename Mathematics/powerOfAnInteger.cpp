@@ -17,7 +17,7 @@ int main()
 		cout<<"Enter number other than 0 and 1";
 	}
 
-	while(num>0)
+	while(num>1)
 	{
 		if(num%power==0)
 		{
