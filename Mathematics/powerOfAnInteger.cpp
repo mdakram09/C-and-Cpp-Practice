@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void main()
+int main()
 {
 	int num,power,temp;
 
@@ -28,5 +28,7 @@ void main()
 		{
 			cout<<"The number "<<temp<<" is not a power of "<<power<<endl;
 		}
+		num=num/10;
 	}
+	return 0;
 }
