@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 	int a,b,c,d,r1,r2;
+	float real,imaginary;
 	cout<<"Enter the values of a, b, c :\t";
 	cin>>a>>b>>c;
 	d=b*b-4*a*c;
@@ -27,5 +28,10 @@ int main()
 	else
 	{
 		cout<<"Roots are Imaginary";
+		real=-(b/(2*a));
+		imaginary=(float)(sqrt(abs(d))/(2*a));
+
+		cout<<"Root 1 is \t:\t"<<real<<"+i"<<imaginary<<endl;
+		cout<<"Root 2 is \t:\t"<<real<<"-i"<<imaginary<<endl;
 	}
 }
