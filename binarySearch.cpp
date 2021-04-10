@@ -2,10 +2,11 @@
 using namespace std;
 int main()
 {
-	int size,key;
+	int size,key,mid,l,h;
 	int A[size];
 
-	
+	l=0;
+	h=size;
 
 	cout<<"Please enter the size of the array \n";
 	cin>>size;
@@ -24,15 +25,27 @@ int main()
 		cin>>A[i];
 	}
 
-	for(int i=0; i<size; i++)
+	while(l<=h)
 	{
-		if(key==A[i])
+		mid=(l+h)/2;
+		if(key==A[mid])
 		{
-			cout<<key<<" found at A["<<i<<"]"<<endl<<endl;
+			cout<<key<<" found at A["<<mid<<"]"<<endl<<endl;
+			
 		}
-		return 0;
+		else if(key<A[mid])
+		{
+			h=mid-1;
+			
+		}
+		else
+		{
+			l=mid+1;
+		
+		}
+		
 	}
 
-	cout<<key<<"Not found"<<endl<<endl;
+	cout<<key<<" Not found"<<endl<<endl;
 
 }
