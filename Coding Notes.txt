@@ -1,0 +1,1 @@
+## You can give same name to array that is sent as a parameter to another function
