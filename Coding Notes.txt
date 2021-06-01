@@ -1,1 +1,6 @@
 ## You can give same name to array that is sent as a parameter to another function
+
+## While sending structure as a parameter, you just have to send the strcuture object
+example : 
+
+printf("The area of the r1 reactangle is %d\n", area(r));
