@@ -27,7 +27,7 @@ int indInsertion(int arr[], int size, int element, int capacity, int index){
 
 int main(){
     int arr[100] = {7, 8, 12, 27, 88};
-    int size = 5, element = 54, index=4;
+    int size = 5, element = 96, index=4;
     display(arr, size); 
     indInsertion(arr, size, element, 100, index);
     size +=1;
