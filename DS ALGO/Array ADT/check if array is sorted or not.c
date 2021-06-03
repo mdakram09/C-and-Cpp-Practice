@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-  int n, s[1000], a = 1, d = 1, i;
+  int n, arr[1000], a = 1, d = 1, i;
 
   printf("Enter the size of the array\n");
   scanf("%d", &n);
@@ -9,14 +9,14 @@ int main()
 
   printf("Enter the array elements one by one \n");
   for (i = 0; i < n; i++)
-    scanf("%d", &s[i]);
+    scanf("%d", &arr[i]);
 
   i = 0;
 
   while ((a == 1 || d == 1) && i < n - 1) {
-    if (s[i] < s[i+1])
+    if (arr[i] < arr[i+1])
       d = 0;
-    else if (s[i] > s[i+1])
+    else if (arr[i] > arr[i+1])
       a = 0;
     i++;
   }
